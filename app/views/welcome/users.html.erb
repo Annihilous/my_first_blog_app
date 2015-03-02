@@ -1,0 +1,19 @@
+
+<% @users.each do | user | %>
+<div class="row">
+    <div class="col-md-6">
+      <div>
+        <h2><%= user.username %></h2>
+      </div>
+      <div class="panel">
+        <div class="panel-body">
+            <p>email: <%= user.email %></p>
+            <p>Location: <%= user.location %></p>
+            <% if user.birthday != nil %>
+            <p>DOB: <%= user.birthday.strftime("%m/%d/%Y") %></p>
+            <%end%>
+        </div>
+      </div>
+    </div>
+</div>
+<% end %>

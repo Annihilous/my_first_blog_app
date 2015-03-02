@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+
+
+<div class="row">
+  <div class="panel panel-default">
+  <div class="panel-heading panel-title">
+    <h1>Brillient Content</h1>
+  </div>
+  </div>
+    <% @blog_posts.each do |blog_post| %>
+    <div class="col-md-6">
+      <div class="panel">
+      <tr>
+        <div class="panel-heading">
+          <p><strong><%= link_to blog_post.title, blog_post %></p>
+        </div>
+        <div class="panel-body">
+          <p>by <strong><%= blog_post.user.username %></p>
+          <p><%= blog_post.blog_entry[0..270] %>...[<%= link_to "READ MORE", blog_post %>]</p>
+        </div>
+      </tr>
+      </div>
+    </div>
+    <% end %>
+</div>
+
+<br>
+
+<%= link_to 'New Blog post', new_blog_post_path, class: "btn btn-custom"  %>
