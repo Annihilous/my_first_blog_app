@@ -35318,3 +35318,69 @@ Processing by BlogPostsController#index as HTML
   Rendered blog_posts/index.html.erb within layouts/application (7.6ms)
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
 Completed 200 OK in 85ms (Views: 82.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-03-04 11:04:17 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BlogPostsController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36mBlogPost Load (1.5ms)[0m  [1mSELECT "blog_posts".* FROM "blog_posts"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered blog_posts/index.html.erb within layouts/application (57.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "blog_posts".* FROM "blog_posts"
+Completed 200 OK in 232ms (Views: 192.1ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-03-04 11:04:18 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-03-04 11:04:18 -0500
+
+
+Started GET "/assets/comments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-04 11:04:18 -0500
+
+
+Started GET "/assets/blog_posts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-04 11:04:18 -0500
+
+
+Started GET "/assets/blog_posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-04 11:04:18 -0500
+
+
+Started GET "/assets/application-0c2b373e524d2c5b34273730dbf0dd07.css?body=1" for ::1 at 2015-03-04 11:04:18 -0500
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-04 11:04:18 -0500
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-03-04 11:04:18 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-03-04 11:04:18 -0500
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-04 11:04:18 -0500
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-04 11:04:18 -0500
+
+
+Started GET "/assets/application-3602cadbcb413bdfcfbb93e84761bd53.js?body=1" for ::1 at 2015-03-04 11:04:18 -0500
+
+
+Started GET "/assets/blog_posts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-04 11:04:22 -0500
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-04 11:04:22 -0500
+
+
+Started GET "/assets/comments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-04 11:04:22 -0500
+
+
+Started GET "/assets/scaffolds-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-03-04 11:04:22 -0500
